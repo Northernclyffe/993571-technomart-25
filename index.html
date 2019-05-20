@@ -8,7 +8,12 @@
 	<header>
 		<div class="header-top">
 			<img src="img/logo-technomart.svg" alt="Техномарт" class="logo">
-			<span class="search">Поиск</span>
+			<form action="https://echo.htmlacademy.ru" class="search">
+				<label>Поиск
+					<input type="search">
+				</label>
+				<button type="submit">Кнопка</button>
+			</form>
 			<a href="#" class="bookmark">Закладки</a>
 			<a href="#" class="cart">Корзина</a>
 			<a href="" class="header-button">Оформить заказ</a>
@@ -95,5 +100,22 @@
 			<a href="http://htmlacademy.ru">htmlacademy.ru</a>
 		</div>
 	</footer>
+	<section class="popup-map">
+		Интерактивная карта
+	</section>
+	<section class="popup-form">
+		<form action="https://echo.htmlacademy.ru">
+			<label> Ваше имя
+				<input name="name" type="text" placeholder="Имя Фамилия">
+			</label>
+			<label> Ваш e-mail
+				<input name="email" type="email" placeholder="e-mail@example.com">
+			</label>
+			<label> Текст письма
+				<input name="text" type="text" placeholder="В свободной форме">
+			</label>
+			<button type="submit">Отправить</button>
+		</form>
+	</section>
   </body>
 </html>
