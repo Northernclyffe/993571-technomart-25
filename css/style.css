@@ -1,0 +1,400 @@
+body {
+	margin: 0px;
+	padding: 0px;
+
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 24px;
+	background-color: white;
+	font-weight: 400
+}
+
+a {
+	text-decoration: none
+}
+
+/* начало шапки */
+.header-top {
+	background-color: #293449;
+	line-height: 18px;
+	color: white;
+}
+
+.header-top a {
+	color:white;
+}
+
+.header-button {
+	background-color: #63A63E;
+	padding-left: 20px;
+	padding-top: 12px;
+	padding-right: 20px;
+	padding-bottom: 12px
+	}
+
+.header-button:hover {
+	background-color: #5FBB2D
+	}
+
+.header-button:active {
+background-color: #518534;
+color: rgba(255,255,255,0.5);
+}	
+
+.logo {
+	background-color: #EE3643;
+	
+	padding-left: 56px;
+	padding-top: 12px;
+	padding-right: 56px;
+	padding-bottom: 12px;
+	border-bottom: 5px solid #B52932
+}
+
+.logo:hover {
+	background-color: #CA2C37;
+}
+
+.logo:active {
+	background-color: #BA2732;
+}
+
+.search:hover,
+.bookmark:hover,
+.cart:hover {
+background-color: #212A3A
+}
+
+.bookmark:active,
+.cart:active {
+background-color: #161D29;
+color: rgba(255,255,255,0.6);
+}
+
+.search input{
+	background-color: transparent;
+	border: none;
+}
+
+.header-bottom {
+	background-color: #F4F7F8;
+}
+
+.header-bottom h1 {
+	font-family: "Cuprum"; Arial; sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	font-weight: 400;
+	color: #EE3643;
+}
+
+.header-phone {
+	color: #EE3643;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 400
+}
+
+.header-adress {
+	color:#32425C;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px
+}
+
+.login a {
+	background-color: white;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 21px;
+	color: black
+}
+
+.login a:hover {
+	color: #EE3643
+}
+
+.login a:active {
+	color: rgba(0,0,0,0.3);
+}
+
+.login li,
+.site-nav li {
+	list-style-type: none;
+}
+
+.site-nav {
+	background-color: #32425C;
+}
+
+.site-nav a {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 17px;
+	color: white;
+}
+
+.site-nav a:hover {
+	background-color: #293449;
+}
+
+.site-nav a:active {
+	background-color: #1D2739;
+	color: rgba(255,255,255,0.5);
+}
+/* конец шапки */
+
+/* начало секции о компании */
+.about-us h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 400
+}
+
+.about-us p {
+	font-family: "PT sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400
+}
+
+.about-us li {
+	font-size: 18px;
+	line-height: 19px;
+	list-style-type: none;
+}
+
+.button-about-us {
+	font-size: 14px; 
+	line-height: 18px;
+	background-color: #EE3643;
+	text-transform: uppercase;
+	color: white;
+
+	padding-left: 12px;
+	padding-top: 13px;
+	padding-right: 12px;
+	padding-bottom: 13px;
+	border-radius: 3px;
+}
+
+.button-about-us:hover {
+	background-color: #CA2C37;
+}
+
+.button-about-us:active {
+	background-color: #BA2732;
+}
+
+/* онец секции о компании */
+
+/* начало секции контакты */
+.contacts h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 400
+}
+
+.contacts p {
+	font-family: "PT sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400
+}
+
+.contacts-button {
+	font-size: 14px; 
+	line-height: 18px;
+	background-color: #EE3643;
+	text-transform: uppercase;
+	color: white;
+
+	padding-left: 12px;
+	padding-top: 13px;
+	padding-right: 12px;
+	padding-bottom: 13px;
+	border-radius: 3px;
+}
+
+.contacts-button:hover {
+	background-color: #CA2C37;
+}
+
+.contacts-button:active {
+	background-color: #BA2732;
+}
+/* конец секции контакты */
+
+/* начало футера */
+.footer-top {
+	background-color:#32425C;
+}
+
+.footer-adress {
+font-size: 18px;
+color: #F3F7F9;
+line-height: 24px;
+font-weight: 400
+}
+
+.footer-nav,
+.footer-sections {
+	font-size: 18px;
+	line-height: 24px;
+	list-style-type: none;
+}
+
+.footer-nav a:hover,
+.footer-sections a:hover {
+	text-decoration: underline;
+}
+
+.footer-nav a:active,
+.footer-sections a:active {
+	opacity: 0.5;
+}
+
+.footer-nav a{
+	color:#F1F5F7;
+}
+
+.footer-sections a{
+	color: #FFD180;
+}
+
+.footer-bottom {
+	background-color:#293449;
+}
+
+.footer-copyright,
+.footer-feedback,
+.footer-development{ 
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 18px;
+}
+
+.social li {
+	list-style-type: none;
+}
+
+.social a {
+	color: #FFFFFF;
+}
+
+.mail {
+	color: #FFD180
+}
+
+.academy {
+	color: #FFD180;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.mail:hover,
+.academy:hover {
+text-decoration: underline;
+}
+
+.mail:active,
+.academy:active {
+color: #EE3643;
+}
+/* конец футера */
+
+.popup-map,
+.popup-form,
+.popup-cart {
+	display: none
+}
+
+/* страница с товарам */
+.catalog-nav li {
+	list-style-type: none;
+}
+
+.catalog-nav a {
+	font-family: "PT sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000
+}
+
+.perforators h1 {
+	text-transform: uppercase;
+	background-color: #F2F6F8;
+	color: #32425C;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400
+}
+
+.sidebar p {
+	border-top: 1px solid #E5E5E5;
+	text-transform: uppercase;
+	font-family: "PT sans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700
+}
+
+.sidebar li {
+	text-transform: uppercase;
+	font-family: "PT sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 19px;
+	font-weight: 400;
+	list-style-type: none;
+}
+
+.sidebar button {
+	text-transform: uppercase;
+	font-family: "PT sans", Arial, sans-serif;
+	font-size: 13px;
+	text-align: center;
+	line-height: 18px;
+	border: 1px solid #E5E5E5;
+	padding-left: 40px;
+	padding-top:13px;
+	padding-right:40px;
+	padding-bottom:13px;
+}
+
+.perfo-card {
+	border: 1px solid #EAEAEA;
+	text-align: center;
+}
+ 
+.perfo-card-popup div {
+	display: none
+}
+
+.perfo-card-info p:first-child {
+font-family: "PT sans", Arial, sans-serif;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+}
+
+.perfo-card-info p:last-child {
+font-family: "PT sans", Arial, sans-serif;
+font-size: 17px;
+font-weight: 700;
+line-height: 18px;
+background-color:#EE3643;
+color:#FFFFFF;
+}
+
+.perfo-card-info s {
+font-family: "PT sans", Arial, sans-serif;
+font-size: 17px;
+color: #999999;
+line-height: 18px;
+font-weight: 700;
+}
+
