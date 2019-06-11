@@ -100,10 +100,12 @@ img {
 
 .logo:hover {
 	background-color: #CA2C37;
+	box-shadow: 0 5px 0 #992129;
 }
 
 .logo:active {
 	background-color: #BA2732;
+	box-shadow: 0 5px 0 #8D1D26;
 }
 
 .search {
@@ -141,10 +143,33 @@ img {
     opacity: 0.3
 }
 
+.search input:focus {
+	background-color: white;
+	color: black;
+}
+
+.search input::placeholder {
+	color: white
+}
+
+.header-top .bookmark:hover::before,
+.header-top .cart:hover::before,
+.search:hover button {
+	opacity: 1
+}
+
+.header-top .bookmark:active::before {
+	opacity: 0.5
+}
+
+.header-top .cart:active::before {
+	opacity: 0.5
+}
+
 .search:hover,
 .header-top .bookmark:hover,
 .header-top .cart:hover {
-	background-color: #212A3A
+	background-color: #212A3A;
 }
 
 .header-top .bookmark:active,
@@ -259,6 +284,14 @@ img {
    
     width: 121px;
     box-sizing: border-box;
+}
+
+.login-in:hover .login-svg path {
+	fill: #32425C
+}
+
+.login-in:active .login-svg path {
+	fill: #c5c5c5
 }
 
 .login-svg {
@@ -526,10 +559,12 @@ img {
 
 .logo-footer:hover {
 	background-color: #CA2C37;
+	box-shadow: 0 5px 0 #992129;
 }
 
 .logo-footer:active {
 	background-color: #BA2732;
+	box-shadow: 0 5px 0 #8D1D26;
 }
 
 .footer-top-below {
@@ -670,6 +705,14 @@ img {
 	color: #FFFFFF;
 }
 
+.social li a:hover { 
+	background-color: #EE3643
+}
+
+.social li a:active { 
+	background-color: #EE3643
+}
+
 .mail {
 	color: #FFD180
 }
@@ -682,12 +725,12 @@ img {
 
 .mail:hover,
 .academy:hover {
-text-decoration: underline;
+	text-decoration: underline;
 }
 
 .mail:active,
 .academy:active {
-color: #EE3643;
+	color: #EE3643;
 }
 /* конец футера */
 
@@ -879,6 +922,11 @@ color: #EE3643;
 	position: relative;
 }
 
+
+.perfo-card:hover {
+	box-shadow: 0 10px 25px 0 rgba(41,52,73,0.50);
+}
+
 .perfo-card img {
 	margin-right: 20px;
 	margin-top: 23px
@@ -905,6 +953,7 @@ color: #EE3643;
 	color: #32425C;
 	border: 3px solid #63A63E;
 	border-radius: 2px;
+	background-color: white
 }
 
 .perfo-card .cart {
@@ -943,6 +992,29 @@ color: #EE3643;
 	align-items: center; 
 	justify-content: center; 
 	text-align: center 
+}
+
+.perfo-card-popup .cart:hover::before {
+	opacity: 1
+}
+
+.perfo-card-popup .cart:hover {
+	background: #5FBB2D;
+	box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.perfo-card-popup .cart:active {
+	background: #518534;
+	box-shadow: none;
+}
+
+.perfo-card-popup .bookmark:hover {
+	border: 3px solid #32425C;
+	color: #32425C;
+}
+
+.perfo-card-popup .bookmark:active {
+	opacity: 0.3
 }
 
 .perfo-card-info {
@@ -1299,6 +1371,7 @@ color: #EE3643;
 		background-image: url("../img/icon-mark.svg");
 	    top: 54px;
     	left: 81px;
+    }
 
 
 
