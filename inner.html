@@ -5,22 +5,22 @@
     <title>Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-min.css">
   </head>
   <body class="inner">
 	<header>
 		<div class="header-top-wrap">
 			<div class="container">
 				<div class="header-top">
-					<img src="img/logo-technomart.svg" alt="Техномарт" class="logo">
+					<a class="logo-but" href="index.html"><img src="img/logo-technomart.svg" alt="Техномарт" class="logo"></a>
 					<form action="https://echo.htmlacademy.ru" class="search">
 						<label>
 							<input placeholder="Поиск" type="search">
 						</label>
 						<button type="submit"></button>
 					</form>
-					<a href="#" class="bookmark">Закладки: 0</a>
-					<a href="#" class="cart">Корзина: 0</a>
+					<a href="#" class="header-bookmark">Закладки: <span class="b-null">0</span></a>
+					<a href="#" class="header-cart">Корзина: <span class="null">0</span></a>
 					<a href="#" class="header-button">Оформить заказ</a>
 				</div>
 			</div>
@@ -32,10 +32,18 @@
 					<a href="tel:+78125550555" class="header-phone">+7 (812) 555-05-55</a>
 					<p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
-				<ul class="login">
-					<li><a class="login-in" href="#"><svg class="login-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Войти</a></li>
-					<li><a class="registration" href="#">Регистрация</a></li>
-				</ul>
+				<div class="profile">
+					<div class="user-wrapper">
+						<a class="username" href="https://htmlacademy.ru/profile/id993571">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+						Равшан Джамшутович</a>
+						<a class="logout" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg></a>
+					</div>
+					<div class="orders-wrap">
+						<a href="#" class="orders">Мои заказы</a>
+						<a href="#" class="cabinet">Личный кабинет</a>
+					</div>
+				</div>
 			</div>
 			<div class="site-nav-wrap">
 				<nav class="container">
@@ -74,14 +82,30 @@
 			</li>
 		</ul>
 	</div>
-
 	<section class="perforators container">
 		<div class="perfo-h1">
 			<h1>Перфораторы</h1>
 		</div>
 		<div class="content-wrap">
 			<div class="sidebar">
-				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<div class="filter">
+					<p>Фильтр</p>
+				</div>
+				<div class="price">
+					<p class="price-title">Цена</p>
+					<div class="filter-interface">
+						<div class="filter-strip">
+							<div class="filter-strip-green">
+							</div>
+						</div>
+					</div>
+					<div class="price-numbers">
+						<p>0</p>
+						<p>—</p>
+						<p>30000</p>
+					</div>
+				</div>
+				<form class="sidebar-form" method="get" action="https://echo.htmlacademy.ru">
 					<p>Производители:</p>
 					<ul class="producers">
 						<li>
@@ -140,8 +164,43 @@
 					<button type="submit">Показать</button>
 				</form>
 			</div>
-			
 			<div class="content">
+				<div class="sort">
+					<p class="sort-name">Сортировка</p>
+					<div class="sort-options">
+						<button class="by-price">По цене</button>
+						<button class="by-type">По типу</button>
+						<button class="by-func">По функционалу</button>
+					</div>
+					<div class="controls">
+						<button>
+							<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							        <g id="Catalog" transform="translate(-1010.000000, -502.000000)" fill="#C5C5C5" fill-rule="nonzero">
+							            <g id="sort" transform="translate(370.000000, 488.000000)">
+							                <g id="icon-down-dir" transform="translate(645.500000, 19.000000) rotate(-180.000000) translate(-645.500000, -19.000000) translate(640.000000, 14.000000)">
+									                    <polyline id="Shape" points="5.5 10 0 0 11 0"></polyline>
+							                </g>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+						</button>
+						<button>
+							<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							        <g id="Catalog" transform="translate(-1042.000000, -502.000000)" fill="#C5C5C5" fill-rule="nonzero">
+							            <g id="sort" transform="translate(370.000000, 488.000000)">
+							                <g id="icon-down-dir" transform="translate(672.000000, 14.000000)">
+							                    <polyline id="Shape" points="5.5 10 0 0 11 0"></polyline>
+							                </g>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+						</button>
+					</div>
+				</div>
 				<div class="perfo-list">
 					<div class="perfo-card">
 						<div class="perfo-card-popup">
@@ -266,11 +325,24 @@
 							<p>12500 Р.</p>
 						</div>
 					</div>
+					<ul class="pages">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">Следующая</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-
 	</section>
+	<div class="about-perfo">
+		<section class="container">
+			<h2>
+				Пара слов о перфораторах
+			</h2>
+			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br> ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+		</section>
+	</div>
 	</main>
 
 	<footer>
@@ -318,37 +390,20 @@
 					</div>
 					<div class="wrap-develop">
 						<p class="footer-development">Разработано —</p>
-						<a class="academy" href="http://htmlacademy.ru">htmlacademy.ru</a>
+						<a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	
-	<section class="popup-cart">
+	<section class="popup-cart form-hide">
+		<button class="close-form">Закрыть</button>
 		<p>Товар добавлен в корзину!</p>
 		<div class="buttons-wrap">
 			<a href="#">Оформить заказ</a>
 			<a href="#">Продолжить покупки</a>
 		</div>
 	</section>
-	<section class="popup-form">
-		<form action="https://echo.htmlacademy.ru">
-			<div class="popup-form-wrap">
-				<label class="name"> Ваше имя
-					<input name="name" type="text" placeholder="Имя Фамилия">
-				</label>
-				<label class="e-mail"> Ваш e-mail
-					<input name="email" type="email" placeholder="e-mail@example.com">
-				</label>
-				<label class="text_letter"> Текст письма
-					<textarea name="text" type="textarea" placeholder="В свободной форме"></textarea>
-				</label>
-			</div>
-			<div class="button-send-wrap">
-				<button type="submit">Отправить</button>
-			</div>
-		</form>
-	</section>
+	<script src="js/script.js"></script>
 </body>
 </html>
