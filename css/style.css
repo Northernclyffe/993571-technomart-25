@@ -504,7 +504,8 @@ img {
 
 .orders:active,
 .cabinet:active {
-	opacity: 0.3
+	opacity: 0.3;
+	color: #32425c 
 }
 /* конец шапки */
 
@@ -1387,6 +1388,7 @@ img {
 .footer-nav a:active,
 .footer-sections a:active {
 	opacity: 0.5;
+	text-decoration: none;
 }
 
 .footer-nav a {
@@ -1507,10 +1509,21 @@ img {
 .mail:active,
 .academy:active {
 	color: #EE3643;
+	text-decoration: none;
 }
 /* конец футера */
 
 /* страница с товарам */
+.button-send-wrap button:hover,
+.buttons-wrap a:nth-child(1):hover  {
+	background-color: #CA2C37;
+}
+
+.button-send-wrap button:active,
+.buttons-wrap a:nth-child(1):active {
+	background-color: #BA2732;
+}
+
 .catalog-nav ul,
 .sidebar ul {
 	margin: 0;
@@ -1826,12 +1839,44 @@ font-weight: 300;
 	background-image: url(../img/radio-on-hov.png);
 }
 
+.power label .visually-hidden:disabled + .radio-button {
+	opacity: 0.3;
+}
+
+.power label .visually-hidden:disabled ~ .power-label-name {
+	opacity: 0.4;
+}
+
+.power label .visually-hidden:checked:disabled + .radio-button {
+	opacity: 0.3;
+}
+
+.power label .visually-hidden:checked:disabled ~ .power-label-name {
+	opacity: 0.4;
+}
+
 .producers label:hover .check_box {
 	background-image: url(../img/checkbox-off-hov.png);
 }
 
 .producers label:hover .visually-hidden:checked + .check_box {
 	background-image: url(../img/checkbox-on-hov.png);
+}
+
+.producers label .visually-hidden:checked:disabled + .check_box {
+	opacity: 0.3;
+}
+
+.producers label .visually-hidden:checked:disabled ~ .label-name {
+	opacity: 0.4;
+}
+
+.producers label .visually-hidden:disabled + .check_box {
+	opacity: 0.3;
+}
+
+.producers label .visually-hidden:disabled ~ .label-name {
+	opacity: 0.4;
 }
 
 .radio-button {
