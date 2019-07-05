@@ -1087,6 +1087,8 @@ img {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
+
+	z-index: -1;
 }
 
 .tab-item-2:after {
@@ -1103,6 +1105,8 @@ img {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
+
+	z-index: -1;
 }
 
 .tab-item-3:after {
@@ -1119,10 +1123,14 @@ img {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
+
+	z-index: -1;
 }
 
 .tabs-list .tabs-item {
 	display: none;
+	position: relative; 
+	z-index: 1;
 }
 
 .tabs ul {
@@ -1163,7 +1171,8 @@ img {
 /* начало секции о компании */
 .company-wrap {
 	display: flex;
-	min-height: 536px;
+	min-height: 516px;
+	padding-bottom: 20px 
 }
 
 .about-us {
@@ -1912,14 +1921,14 @@ font-weight: 300;
 	color: #000000
 }
 
-.perfo-h1 {
+.perfo-h2 {
 	height: 89px;
 	background-color: #F2F6F8;
 	display: flex;
     align-items: center;
 }
 
-.perforators h1 {
+.perforators h2 {
 	text-transform: uppercase;
 	color: #32425C;
 	font-size: 30px;
@@ -2098,6 +2107,9 @@ font-weight: 300;
 	padding-left: 28px;
 	padding-right: 28px;
 	margin-bottom: 9px;
+
+	max-height: 40px;
+	overflow: hidden;
 }
 
 .perfo-card-info p:last-child {
