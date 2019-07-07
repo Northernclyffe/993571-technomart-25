@@ -439,6 +439,7 @@ img {
 	min-height: 45px;
 	padding-left: 13px;
 	padding-right: 10px;
+	position: relative;
 }
 
 .user-wrapper a {
@@ -452,7 +453,10 @@ img {
 }
 
 .logout {
-    margin-left: 36px;
+    position: absolute;
+	margin-left: 0;
+	right: 10px;
+	top: 15px;
 }
 
 .orders-wrap a {
@@ -1599,6 +1603,8 @@ img {
     margin-right: 15px;
 
     vertical-align: top;
+    position: relative;
+    top: 6px
 }
 
 .filter,
@@ -1832,7 +1838,7 @@ font-weight: 300;
 
    	position: absolute;
    	margin-left: -32px;
-   	top: -2px
+   	top: 0
 }
 
 .visually-hidden:checked + .check_box {
@@ -1956,7 +1962,7 @@ font-weight: 300;
 	font-weight: 700;
 	
 	padding: 18px 0 0 0;
-	margin: 21px 0 9px 0;
+	margin: 21px 0 13px 0;
 }
 
 .sidebar li {
@@ -2036,7 +2042,14 @@ font-weight: 300;
 	color: #32425C;
 	border: 3px solid #63A63E;
 	border-radius: 2px;
-	background-color: white
+	background-color: white;
+	width: 129px;
+	height: 32px;
+
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	text-align: center 
 }
 
 .perfo-card .cart {
@@ -2066,8 +2079,7 @@ font-weight: 300;
     background-position: 0 0;
 }
 
-.perfo-card .cart,
-.perfo-card .bookmark {
+.perfo-card .cart {
 	width: 135px;
 	height: 38px;
 
@@ -2379,28 +2391,21 @@ font-weight: 300;
 	.popup-form input,
 	.popup-form textarea {
 		border: 2px solid #DEE3E4;
-		border-radius: 2px
-	}
-
-	.popup-form input::placeholder {
+		border-radius: 2px;
 		font-family: "PT sans", Arial, sans-serif;
 		font-size: 13px;
 		color: #A9A9A9;
 		line-height: 18px;
+	}
+
+	.popup-form input {
 		padding-left: 14px;
 	}
 
-	.popup-form textarea {
-		resize: none;
-	}
-
-	.text_letter textarea::placeholder {
-		font-family: "PT sans", Arial, sans-serif;
-		font-size: 13px;
-		color: #A9A9A9;
-		line-height: 18px;
+	.text_letter textarea {
 		padding-left: 13px;
-		padding-top: 11px
+		padding-top: 11px;
+		resize: none;
 	}
 
 	.popup-form form::before {
